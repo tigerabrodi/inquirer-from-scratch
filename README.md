@@ -41,3 +41,5 @@ The Select function was much harder than expected. Many of the things were new t
 - `rl.close()` - This closes the readline interface, which means we are done with the prompt. This is how we exit asking the user for input.
 
 ## Select function demo
+
+https://github.com/narutosstudent/inquirer-from-scratch/assets/49603590/19fbcaef-7c77-4dd7-8041-b5612f9d277f
