@@ -8,21 +8,14 @@ type Choice = {
   description: string
 }
 
-// Promise<
-//   Choices extends Array<infer U>
-//     ? U extends Choice
-//       ? U['value']
-//       : never
-//     : never
-// >
-
 export async function select<Choices extends Array<Choice>>({
   message,
   choices,
 }: {
   message: string
   choices: Choices
-}) {
+  // Choices[number]['value'] is a TypeScript way to infer the type of the value property from the elements of the Choices array. It tells TypeScript to look at the type of value in each element (Choice) of the array and use that as the return type for the promise.
+}): Promise<Choices[number]['value']> {
   const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout,
