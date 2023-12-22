@@ -19,7 +19,7 @@ async function main() {
         value: 'green',
         description: 'green is a color',
       },
-    ],
+    ] as const,
   })
 
   console.log(`You chose ${color}`)

@@ -8,7 +8,7 @@ type Choice = {
   description: string
 }
 
-export async function select<Choices extends Array<Choice>>({
+export async function select<Choices extends ReadonlyArray<Choice>>({
   message,
   choices,
 }: {
