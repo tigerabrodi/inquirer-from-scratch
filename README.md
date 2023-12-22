@@ -4,7 +4,7 @@ Building Inquirer from scratch.
 
 ## TODO
 
-- [ ] input
+- [x] input
 - [ ] select
 - [ ] checkbox
 - [ ] confirm
