@@ -1,8 +1,11 @@
 import { input } from './input'
 
 async function main() {
-  const answer = await input()
-  console.log('This is the answer: ', answer)
+  const firstName = await input({ message: "What's your first name?" })
+  const lastName = await input({ message: "What's your last name?" })
+  const age = await input({ message: "What's your age?" })
+
+  console.log(`Hello ${firstName} ${lastName}! You are ${age} years old.`)
 }
 
 main()
