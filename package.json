@@ -6,7 +6,8 @@
   "scripts": {
     "build": "tsc",
     "input": "ts-node ./src/input/index.ts",
-    "select": "ts-node ./src/select/index.ts"
+    "select": "ts-node ./src/select/index.ts",
+    "checkbox": "ts-node ./src/checkbox/index.ts"
   },
   "keywords": [],
   "author": "",
