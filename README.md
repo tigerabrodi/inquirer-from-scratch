@@ -7,7 +7,7 @@ Building Inquirer from scratch.
 - [x] input
 - [x] select
 - [x] checkbox
-- [ ] confirm
+- [x] confirm
 - [ ] password
 
 ## Run it

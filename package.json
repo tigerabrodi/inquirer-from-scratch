@@ -7,7 +7,8 @@
     "build": "tsc",
     "input": "ts-node ./src/input/index.ts",
     "select": "ts-node ./src/select/index.ts",
-    "checkbox": "ts-node ./src/checkbox/index.ts"
+    "checkbox": "ts-node ./src/checkbox/index.ts",
+    "confirm": "ts-node ./src/confirm/index.ts"
   },
   "keywords": [],
   "author": "",
