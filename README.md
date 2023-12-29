@@ -40,6 +40,25 @@ The Select function was much harder than expected. Many of the things were new t
 - Interestingly, similar to JavaScript browser stuff, we need to detach the listener when done `process.stdin.off`.
 - `rl.close()` - This closes the readline interface, which means we are done with the prompt. This is how we exit asking the user for input.
 
+## Circular calculation
+
+```js
+// Determine the previous highlightedId in circular fashion
+// Suppose choices.length = 4, and the current highlightedId = 0
+// 0 - 1 = -1
+// -1 + 4 = 3
+// 3 is the previous highlightedId which is the last choice
+highlightedId = (highlightedId - 1 + choices.length) % choices.length // up calculation
+displayChoices()
+
+// Determine the next highlightedId in circular fashion
+// Suppose choices.length = 4, and the current highlightedId = 3
+// 3 + 1 = 4
+// 4 % 4 = 0
+// 0 is the next highlightedId which is the first choice
+highlightedId = (highlightedId + 1) % choices.length // down calculation
+```
+
 ## Select function demo
 
 https://github.com/narutosstudent/inquirer-from-scratch/assets/49603590/19fbcaef-7c77-4dd7-8041-b5612f9d277f
